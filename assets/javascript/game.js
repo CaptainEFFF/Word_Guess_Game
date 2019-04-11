@@ -5,10 +5,10 @@ var names = [
     "bowser", 
     "link", 
     "zelda", 
-    "ganon", 
+    "ganondorf", 
     "kirby",
     "starfox",
-    ["captain","falcon"],
+    "samus",
     ["donkey","kong"]];
 
 var wrongGuess = [];
@@ -19,6 +19,8 @@ var userGuess = "";
 var underScore = [];
 var counter = 0;
 var lives = 12;
+var x ;
+var y ;
 
 // Random name selected
 var name = [names[Math.floor(Math.random() * names.length)]];
@@ -34,6 +36,7 @@ for (var i = 0; i < name.length; i++){
 rightAnswer = [...new Set(fullName)];
   
 console.log(underScore);
+console.log(fullName);
 console.log(rightAnswer);
 
 
@@ -46,9 +49,15 @@ document.onkeyup = function(event) {
     
     
     else if (rightAnswer.includes(userGuess)){
+        x = fullName.indexOf(userGuess);
+        underScore[x]=userGuess;
+        y = fullName.lastIndexOf(userGuess);
+        underScore[y]=userGuess;
         rightGuess.push(userGuess);
         counter++;
         console.log(counter);
+        console.log(underScore);
+        // document.getElementById(under-score)
         
         
     }
@@ -72,7 +81,7 @@ document.onkeyup = function(event) {
 }
  
 
-// need to push correct letters to underScore
+
 // need to employ DOM methods to update html/css
 // need to create html and css
 
