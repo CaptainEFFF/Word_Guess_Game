@@ -2,14 +2,60 @@ var names = [
     "mario",
     "luigi", 
     "peach", 
+    "daisy",
     "bowser", 
+    "samus",
+    "ridley",
     "link", 
     "zelda", 
+    "sheik",
     "ganondorf", 
     "kirby",
-    "starfox",
-    "samus",
-    ["donkey","kong"]];
+    "fox",
+    "falco",
+    "wolf",
+    "yoshi",
+    "pikachu",
+    "jigglypuff",
+    "mewtwo",
+    "lucario",
+    "greninja",
+    "ness",
+    "lucas",
+    "marth",
+    "roy",
+    "ike",
+    "robin",
+    "corrin",
+    "lucina",
+    "chrom",
+    "pit",
+    "palutena",
+    "wario",
+    "snake",
+    "sonic",
+    "olimar",
+    "villager",
+    "isabelle",
+    "inkling",
+    "bayonetta",
+    "shulk",
+    "ryu",
+    "ken",
+    "cloud",
+    ["donkey","kong"],
+    ["ice","climbers"],
+    ["young","link"],
+    ["bowser","jr"],
+    ["mega","man"],
+    ["pac","man"],
+    ["king","k","rool"],
+    ["meta","knight"],
+    ["dark","samus"],
+    ["dark","pit"],
+    ["duck","hunt"]
+
+];
 
 var wrongGuess = [];
 var rightGuess = [];
@@ -39,12 +85,15 @@ console.log(underScore);
 console.log(fullName);
 console.log(rightAnswer);
 
+document.getElementById("under-score").innerText = underScore.join(" ").toUpperCase();
+
 
 document.onkeyup = function(event) {
     userGuess = event.key.toLowerCase();
     
     if (rightGuess.includes(userGuess)||wrongGuess.includes(userGuess)){
         console.log("Already Guessed");
+       
     }
     
     
@@ -55,7 +104,10 @@ document.onkeyup = function(event) {
         underScore[y]=userGuess;
         rightGuess.push(userGuess);
         counter++;
-        console.log(counter);
+        document.getElementById("under-score").innerText = underScore.join(" ").toUpperCase();
+
+        
+        console.log("counter: "+counter);
         console.log(underScore);
         // document.getElementById(under-score)
         
@@ -65,6 +117,20 @@ document.onkeyup = function(event) {
         
         wrongGuess.push(userGuess);
         lives = lives - 1;
+        
+    }
+
+    if(rightGuess.includes(",")){
+        console.log("Space already added");
+    }
+
+    else if(rightAnswer.includes(",")){
+        x = fullName.indexOf(",");
+        rightGuess.push(",");
+        underScore[x]=",";
+        counter++;
+       
+
     }
     
     console.log(lives);
