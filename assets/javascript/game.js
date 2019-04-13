@@ -66,6 +66,8 @@ var icons = [
     {name: 'r,o,b', image: 'assets/Character-Pictures/rob.png', audio: 'assets/sounds/Rob.wav'},
     {name: 'pokemon,trainer', image: 'assets/Character-Pictures/pokemon.png', audio: 'assets/sounds/Pokemontrainer.wav'},
     {name: 'cpt,falcon', image: 'assets/Character-Pictures/captain.png', audio: 'assets/sounds/Captain.wav'}
+    {name: 'pihrana,plant', image: 'assets/Character-Pictures/pihranaplant.png', audio: 'assets/sounds/Pihranaplant.wav'}
+
 ]
 
 
