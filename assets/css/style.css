@@ -40,3 +40,12 @@
     bottom: 10px;
     font-size: 25px;
 }
+
+#endgame{
+    text-align: center;
+    visibility: hidden;
+}
+#gameover{
+    text-align: center;
+    visibility: hidden;
+}
