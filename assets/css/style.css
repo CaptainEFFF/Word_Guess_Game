@@ -1,4 +1,42 @@
+#head{
+    margin-left: auto;
+    margin-right:auto;
+}
+
 #logo {
-height: 10%;
-width: 80%;
+    margin-left: auto;
+    margin-right:auto;
+    height: 10%;
+    width: 80%;
+}
+
+.new-foe{
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
+    height: 720px;
+    width: 960px;
+    background-image: url(../Character-Pictures/newfoe.jpg)
+}
+
+#under-score{
+    font-size: 40px;
+}
+
+#lives{
+    font-size: 20px;
+}
+
+#foe-icon{
+    position: absolute;
+    left: 700px;
+    margin-top:100px;
+    height: 250px;
+    width: 250x;
+}
+
+#wrong-guess{
+    position: absolute;
+    bottom: 10px;
+    font-size: 25px;
 }
