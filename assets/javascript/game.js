@@ -23,7 +23,7 @@ var icons = [
     {name: 'mewtwo', image: 'assets/Character-Pictures/mewtwo.png', audio: 'assets/sounds/Mewtwo.wav'},
     {name: 'lucario', image: 'assets/Character-Pictures/lucario.png', audio: 'assets/sounds/Lucario.wav'},
     {name: 'greninja', image: 'assets/Character-Pictures/greninja.png', audio: 'assets/sounds/Greninja.wav'},
-    {name: 'incineroar', image: 'assets/Character-Pictures/incineroar.png', audio: 'assets/sounds/Incineroar.wav'},
+    {name: 'incineroar', image: 'assets/Character-Pictures/incineroar.png', audio: 'assets/sounds/Inceneroar.wav'},
     {name: 'ness', image: 'assets/Character-Pictures/ness.png', audio: 'assets/sounds/Ness.wav'},
     {name: 'lucas', image: 'assets/Character-Pictures/lucas.png', audio: 'assets/sounds/Lucas.wav'},
     {name: 'marth', image: 'assets/Character-Pictures/marth.png', audio: 'assets/sounds/Marth.wav'},
