@@ -49,7 +49,7 @@ var icons = [
     {name: 'cloud', image: 'assets/Character-Pictures/cloud.png', audio: 'assets/sounds/Cloud.wav'},
     {name: 'simon', image: 'assets/Character-Pictures/simon.png', audio: 'assets/sounds/Simon.wav'},
     {name: 'richter', image: 'assets/Character-Pictures/richter.png', audio: 'assets/sounds/Richter.wav'},
-    {name: 'dokey,kong', image: 'assets/Character-Pictures/DK.png', audio: 'assets/sounds/Donky.wav'},
+    {name: 'donkey,kong', image: 'assets/Character-Pictures/DK.png', audio: 'assets/sounds/Donkey.wav'},
     {name: 'ice,climbers', image: 'assets/Character-Pictures/iceclimbers.png', audio: 'assets/sounds/Iceclimbers.wav'},
     {name: 'young,link', image: 'assets/Character-Pictures/younglink.png', audio: 'assets/sounds/Younglink.wav'},
     {name: 'toon,link', image: 'assets/Character-Pictures/toonlink.png', audio: 'assets/sounds/Toonlink.wav'},
@@ -188,7 +188,7 @@ document.onkeyup = function(event) {
     if (lives <= 0){
         document.getElementById("gameover").style.visibility = "visible";
         console.log("You Lose")
-        var loseaudio = new Audio("assets/sounds/failure.wav");
+        var loseaudio = new Audio("assets/sounds/Failure.wav");
        loseaudio.play();
         
     }
